@@ -1,7 +1,5 @@
 #!/bin/bash
-
-echo $(date +%Y%m%d_%H%M%S) >> /root/martin-test/run.txt
-
+#echo $(date +%Y%m%d_%H%M%S) >> /root/auto-trace/run.txt
 ########################################
 # modify as needed
 ########################################
