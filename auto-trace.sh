@@ -3,9 +3,9 @@
 ########################################
 # modify as needed
 ########################################
-minfree=15000
+minfree=4000
 schwellwert=1000
-dumpfilesize=10
+dumpfilesize=20
 delpcap=10
 
 #######################################
