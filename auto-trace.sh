@@ -3,13 +3,16 @@
 ########################################
 # modify as needed
 ########################################
-# minimum free space on filesystem to be left in MB
+# minimum free space on filesystem to be left in (MB)
 minfree=4000
-# size of an .pcap file
+
+# size of an .pcap file (MB)
 dumpfilesize=20
-# aditional space before before reaching minimum space, at when we start deleting the oldest .pcap
+
+# aditional space (MB) before reaching minimum space (minfree), at when we begin deleting the oldest .pcap files
 schwellwert=1000
-# how much .pcaps should be deletet when reaching "schwellwert"
+
+# how much .pcap files should be deletet, when reaching "schwellwert"
 delpcap=15
 
 #######################################
