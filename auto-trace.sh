@@ -1,5 +1,4 @@
 #!/bin/bash
-# @#Martin Lewald
 
 echo $(date +%Y%m%d_%H%M%S) >> /root/martin-test/run.txt
 
