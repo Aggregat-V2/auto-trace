@@ -3,6 +3,7 @@
 ########################################
 # modify as needed
 ########################################
+
 # minimum free space on filesystem to be left in (MB)
 minfree=10000
 
