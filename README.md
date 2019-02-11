@@ -1,6 +1,6 @@
 # auto-trace
 
-starts an permanent tcpdump for VoIP analyses purpoeses
+starts an permanent tcpdump for VoIP analyses purposes
 
 Installation: 
 
