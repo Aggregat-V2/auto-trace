@@ -8,12 +8,12 @@ echo $(date +%Y%m%d_%H%M%S) >> /root/martin-test/run.txt
 minfree=15000
 schwellwert=1000
 dumpfilesize=10
-dumphome=/root/auto-trace
 delpcap=10
 
 #######################################
 # dont touch this
 #######################################
+dumphome=/root/auto-trace
 pcaptotal=$(find / -type f -name '*.pcap*' -exec du -c -B MB {} + |grep total$ | awk '{print $1}'| /bin/sed 's/MB//g')
 dfavailable=$(df -B MB | awk '{print $4}' |sed -n 2p| /bin/sed 's/MB//g')
 canuse=$(echo $(($dfavailable+$pcaptotal-$minfree)))
