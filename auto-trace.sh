@@ -31,13 +31,13 @@ if [ "$dfavailable" -gt "$minfree" ]
 then use=ok
 else
 if pidof tcpdump; then
-kill $tcpdumppid ;find $dumphome -type f -name '*.pcap*' |xargs ls -t |tail -n1 |xargs rm -f ;exit
+kill $tcpdumppid ;find $dumphome -type f -name '*.pcap*' |xargs ls -t |tail -n$delcap |xargs rm -f ;exit
 else
-   find $dumphome -type f -name '*.pcap*' |xargs ls -t |tail -n1 |xargs rm -f
+   find $dumphome -type f -name '*.pcap*' |xargs ls -t |tail -n$delcap |xargs rm -f
 fi
 fi
 if [ $dfavailable -lt $minfree2 ]
-then find $dumphome -type f -name '*.pcap*' |xargs ls -t |tail -n1 |xargs rm -f
+then find $dumphome -type f -name '*.pcap*' |xargs ls -t |tail -n$delcap |xargs rm -f
 else use=ok
 fi
 if pidof tcpdump; then
