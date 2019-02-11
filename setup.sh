@@ -1,4 +1,4 @@
-#"/bin/bash
+#!/bin/bash
 mkdir -p /root/auto-trace && chmod 700 /root/auto-trace
 wget -O /root/auto-trace.sh https://raw.githubusercontent.com/Aggregat-V2/auto-trace/master/auto-trace.sh && chmod 700 /root/auto-trace.sh
 
