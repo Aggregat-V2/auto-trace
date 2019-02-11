@@ -29,9 +29,9 @@ if [ "$dfavailable" -gt "$minfree" ]
 then use=ok
 else
 if pidof tcpdump; then
-kill $tcpdumppid ;find $dumphome -type f -name '*.pcap*' |xargs ls -t |tail -n$delcap |xargs rm -f ;exit
+kill $tcpdumppid ;find / -type f -name '*.pcap*' |xargs ls -t |tail -n$delcap |xargs rm -f ;exit
 else
-   find $dumphome -type f -name '*.pcap*' |xargs ls -t |tail -n$delcap |xargs rm -f
+   find / -type f -name '*.pcap*' |xargs ls -t |tail -n$delcap |xargs rm -f
 fi
 fi
 if [ $dfavailable -lt $minfree2 ]
@@ -41,6 +41,7 @@ fi
 if pidof tcpdump; then
 exit
 else
+find / -name 'nohup.out' -delete
 pcaptotal=$(find / -type f -name '*.pcap*' -exec du -c -B MB {} + |grep total$ | awk '{print $1}'| /bin/sed 's/MB//g')
 canuse=$(echo $(($dfavailable+$pcaptotal-$minfree)))
 filenumbers=$(($canuse/$dumpfilesize))
