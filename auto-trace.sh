@@ -41,7 +41,7 @@ fi
 if pidof tcpdump; then
 exit
 else
-find / -name 'nohup.out' -delete
+find $dumphome -name 'nohup.out' -delete
 pcaptotal=$(find / -type f -name '*.pcap*' -exec du -c -B MB {} + |grep total$ | awk '{print $1}'| /bin/sed 's/MB//g')
 canuse=$(echo $(($dfavailable+$pcaptotal-$minfree)))
 filenumbers=$(($canuse/$dumpfilesize))
