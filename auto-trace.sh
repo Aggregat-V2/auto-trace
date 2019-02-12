@@ -23,8 +23,6 @@ dumphome=/root/auto-trace
 dfavailable=$(df -B MB | awk '{print $4}' |sed -n 2p| /bin/sed 's/MB//g')
 tcpdumppid=$(pgrep tcpdump |head -n 1)
 minfree2=$(echo $(($minfree+$schwellwert)))
-mkdir -p $dumphome
-chmod 700 $dumphome
 if [ "$dfavailable" -gt "$minfree" ]
 then use=ok
 else
