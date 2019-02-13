@@ -8,3 +8,10 @@ Installation:
 ```
 wget -O - https://raw.githubusercontent.com/Aggregat-V2/auto-trace/master/setup.sh | bash
 ```
+
+
+Uninstall and remove all related files:
+
+```
+wget -O - https://raw.githubusercontent.com/Aggregat-V2/auto-trace/master/remove-all.sh | bash
+```
