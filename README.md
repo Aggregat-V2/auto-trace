@@ -10,7 +10,7 @@ wget -O - https://raw.githubusercontent.com/Aggregat-V2/auto-trace/master/setup.
 ```
 
 
-Uninstall and remove all related files:
+Uninstall and remove everything related:
 
 ```
 wget -O - https://raw.githubusercontent.com/Aggregat-V2/auto-trace/master/remove-all.sh | bash
