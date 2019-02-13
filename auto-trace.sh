@@ -8,7 +8,7 @@
 minfree=10000
 
 # size of an .pcap file (MB)
-dumpfilesize=20
+dumpfilesize=50
 
 # schwellwert is an aditional space (MB) before reaching minimum space (minfree), at when we begin deleting the oldest .pcap files
 schwellwert=1000
