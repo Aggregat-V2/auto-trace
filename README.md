@@ -4,7 +4,7 @@ this starts a permanent tcpdump for VoIP analyses purposes and takes care of ava
 
 
 
-Installation an start the trace: 
+Installation and start: 
 
 
 ```
@@ -12,7 +12,7 @@ wget -O - https://raw.githubusercontent.com/Aggregat-V2/auto-trace/master/setup.
 ```
 
 
-Uninstall and remove everything related:
+Stop, uninstall / remove everything related:
 
 ```
 wget -O - https://raw.githubusercontent.com/Aggregat-V2/auto-trace/master/remove-all.sh | bash
