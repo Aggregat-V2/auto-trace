@@ -29,7 +29,7 @@ else
 if pidof tcpdump; then
 kill $tcpdumppid ;find / -path /proc -prune -o -type f -name '*.pcap*' -print |xargs ls -t |tail -n$delcap |xargs rm -f ;exit
 else
-   find / -path /proc -prune -o -type f -name '*.pcap*' -print  |xargs ls -t |tail -n$delcap |xargs rm -f
+   find / -path /proc -prune -o -type f -name '*.pcap*' -print  |xargs ls -t |tail -n$delcap |xargs rm -f;exit
 fi
 fi
 if [ $dfavailable -lt $minfree2 ]
