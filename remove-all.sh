@@ -1,4 +1,4 @@
-
+#!/bin/bash
 crontab -r
 sleep 1
 killall tcpdump
