@@ -40,7 +40,7 @@ if pidof tcpdump; then
 exit
 else
 find $dumphome -name 'nohup.out' -delete
-pcaptotal=$(find / -type f -name '*.pcap*' -exec du -c -B MB {} + |grep total$ | awk '{print $1}'| /bin/sed 's/MB//g')
+pcaptotal=$(find / -path /proc -prune -o -type f -name '*.pcap*' -print -exec du -c -B MB {} + |grep total$ | awk '{print $1}'| /bin/sed 's/MB//g')
 canuse=$(echo $(($dfavailable+$pcaptotal-$minfree)))
 filenumbers=$(($canuse/$dumpfilesize))
 nohup tcpdump -i any host not localhost and port 5060 or port 5061 or portrange 10000-20000 -w "$dumphome/trace.pcap" -s0 -vv -C"$dumpfilesize"M -Zroot -W "$filenumbers" -G -C &
