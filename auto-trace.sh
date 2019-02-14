@@ -14,7 +14,7 @@ dumpfilesize=50
 schwellwert=1000
 
 # how much .pcap files should be deleted, when reaching "schwellwert"
-delpcap=10
+delpcap=5
 
 #######################################
 # dont touch this
