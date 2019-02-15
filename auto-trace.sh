@@ -13,7 +13,7 @@ dumpfilesize=50
 # schwellwert is an aditional space (MB) before reaching minimum space (minfree), at when we begin deleting the oldest .pcap files
 schwellwert=1000
 
-# how much .pcap files should be deleted, when reaching "schwellwert"
+# how much .pcap files should be deleted, when reaching "schwellwert + minfree" or "minfree"
 delpcap=5
 
 #######################################
