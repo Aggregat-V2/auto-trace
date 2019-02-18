@@ -5,7 +5,7 @@
 ########################################
 
 # minimum free space on filesystem to be left in (MB)
-minfree=10000
+minfree=9000
 
 # size of an .pcap file (MB)
 dumpfilesize=50
