@@ -4,11 +4,11 @@
 # modify as needed
 ########################################
 
+# size of an single .pcap file (MB)
+dumpfilesize=50
+
 # minimum free space on filesystem to be left in (MB)
 minfree=9000
-
-# size of an .pcap file (MB)
-dumpfilesize=50
 
 # schwellwert is an aditional space (MB) before reaching minimum space (minfree), at when we begin deleting the oldest .pcap files
 schwellwert=1000
