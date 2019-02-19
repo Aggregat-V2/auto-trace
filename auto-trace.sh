@@ -1,4 +1,5 @@
 #!/bin/bash
+# 20190219
 #echo $(date +%Y%m%d_%H%M%S) >> /root/auto-trace/run.txt
 ########################################
 # modify as needed
