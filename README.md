@@ -1,6 +1,6 @@
 # auto-trace
 
-starts a permanent running tcpdump for VoIP analyses purposes and takes care of available disk-space
+starts a permanently running tcpdump for VoIP analysis and takes care of the available hard disk space.
 
 
 
